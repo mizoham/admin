@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault()
     try {
       const response = await axios.post(
-        'http://localhost:3000/api/login', // L'URL de votre API backend
+        'https://apigeo.onrender.com/api/login', // L'URL de votre API backend
         { username, password },
       )
       // Stocker le token ou une information indiquant que l'utilisateur est connecté
